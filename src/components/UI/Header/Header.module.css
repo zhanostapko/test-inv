@@ -1,0 +1,35 @@
+.header {
+  height: 200px;
+  background: rgb(224, 74, 0);
+  background: linear-gradient(
+    145deg,
+    rgba(224, 74, 0, 0.9066001400560224) 22%,
+    rgba(255, 255, 255, 0) 75%
+  );
+  margin-bottom: 30px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container > img {
+  width: 300px;
+}
+
+.title {
+  color: white;
+  font-size: 80px;
+  font-weight: bold;
+  text-transform: uppercase;
+  align-self: center;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.person {
+  color: white;
+  align-self: center;
+  font-family: 'Ubuntu', sans-serif;
+  margin-left: 80px;
+}

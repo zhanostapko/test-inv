@@ -1,0 +1,32 @@
+.input {
+  border-radius: 10px;
+  width: 500px;
+  height: 100px;
+  resize: none;
+  padding: 10px 15px;
+  margin-right: 10px;
+  margin-bottom: 15px;
+}
+
+.actions {
+  margin-bottom: 20px;
+}
+
+.approve {
+  background-color: #87e1a3;
+  margin-right: 5px;
+}
+
+.reject {
+  background-color: #e18787;
+  margin-left: 5px;
+}
+
+.invalid {
+  border-color: red;
+  border-width: 2px;
+}
+
+.invalidText {
+  color: red;
+}
