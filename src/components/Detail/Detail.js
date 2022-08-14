@@ -67,9 +67,11 @@ const Detail = () => {
   return (
     <>
       {isLoading && <Loader />}
-      <Link to="/">
-        <img className={classes.arrow} src={ArrowBack} alt="Back button" />
-      </Link>
+      <div className={classes.arrowBack}>
+        <Link to="/">
+          <img className={classes.arrow} src={ArrowBack} alt="Back button" />
+        </Link>
+      </div>
       <TableScratch striped bordered hover responsive>
         <thead>
           <tr>

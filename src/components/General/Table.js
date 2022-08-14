@@ -8,9 +8,6 @@ function Table() {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
 
-  const time1 = new Date('9:55');
-  console.log(time1);
-
   const fetchInvoiceData = useCallback(async () => {
     setIsLoading(true);
     setError(null);

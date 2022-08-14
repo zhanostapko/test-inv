@@ -10,11 +10,11 @@ const Row = ({ invoice }) => {
     <tr>
       <td className={classes.centered}>
         <Link to={`/${id}`} state={{ status: status }}>
-          {periodYear}.{periodMonth}
+          {periodYear}.{periodMonth < 10 ? `0${periodMonth}` : periodMonth}
         </Link>
       </td>
       <td>{days}</td>
-      <td>{blh}</td>
+      <td>{blh.toFixed(2)}</td>
       <td>{orDays}</td>
       <td>{extraFee}</td>
       <td
