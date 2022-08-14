@@ -1,9 +1,9 @@
-import { Table as TableScratch } from 'react-bootstrap';
 import { useEffect, useState, useCallback } from 'react';
 import Rows from './Rows';
 import Loader from '../UI/Loader/Loader';
+import Table from '../UI/Table/Table';
 
-function Table() {
+function TableWrapper() {
   const [invoices, setInvoices] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
@@ -37,7 +37,7 @@ function Table() {
   return (
     <>
       {isLoading && <Loader />}
-      <TableScratch striped bordered hover responsive>
+      <Table>
         <thead>
           <tr>
             <th>Period</th>
@@ -49,7 +49,7 @@ function Table() {
           </tr>
         </thead>
         {!isLoading && invoices.length > 0 && <Rows invoices={invoices} />}
-      </TableScratch>
+      </Table>
       {!isLoading && invoices.length === 0 && !error && (
         <p>No invoices found</p>
       )}
@@ -59,4 +59,4 @@ function Table() {
   );
 }
 
-export default Table;
+export default TableWrapper;

@@ -20,9 +20,9 @@ const Row = ({ invoice }) => {
       <td
         className={
           status === 'Accepted'
-            ? 'table-success'
+            ? `${classes.accepted}`
             : status === 'In Process'
-            ? 'table-warning'
+            ? `${classes.process}`
             : ''
         }
       >

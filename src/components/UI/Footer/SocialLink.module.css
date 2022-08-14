@@ -4,3 +4,13 @@
   margin-left: 15px;
   margin-right: 15px;
 }
+
+.link {
+  text-decoration: none;
+  color: white;
+}
+
+.link:hover {
+  color: white;
+  text-decoration: underline;
+}

@@ -1,3 +1,11 @@
 .centered > a {
   justify-content: center;
 }
+
+.accepted {
+  background-color: #8fd19e86;
+}
+
+.process {
+  background-color: #ffdf7e86;
+}
