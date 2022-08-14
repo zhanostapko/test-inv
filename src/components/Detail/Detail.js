@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import { Table as TableScratch } from 'react-bootstrap';
 import { useParams, useLocation, Link } from 'react-router-dom';
 import Loader from '../UI/Loader/Loader';
 import ConfirmForm from './ConfirmForm';
