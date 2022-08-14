@@ -6,6 +6,10 @@
   padding: 10px 15px;
   margin-right: 10px;
   margin-bottom: 15px;
+  margin-top: 15px;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
 }
 
 .actions {

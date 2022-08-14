@@ -4,6 +4,7 @@ import Loader from '../UI/Loader/Loader';
 import ConfirmForm from './ConfirmForm';
 import classes from './Detail.module.css';
 import ArrowBack from '../../assets/icons/circle-arrow-left.svg';
+import Table from '../UI/Table/Table';
 
 const Detail = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -71,7 +72,7 @@ const Detail = () => {
           <img className={classes.arrow} src={ArrowBack} alt="Back button" />
         </Link>
       </div>
-      <TableScratch striped bordered hover responsive>
+      <Table>
         <thead>
           <tr>
             <th>Date</th>
@@ -140,7 +141,7 @@ const Detail = () => {
         {!isLoading && Object.keys(invoice) === 0 && !error && (
           <p>No invoices found</p>
         )}
-      </TableScratch>
+      </Table>
       {location.state.status === 'In Process' ? <ConfirmForm /> : ''}
 
       {!isLoading && error && <p>{error}</p>}
