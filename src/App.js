@@ -1,11 +1,11 @@
-import React from 'react';
-import { Routes, Route } from 'react-router-dom';
-import TableWrapper from './components/General/TableWrapper';
-import './App.css';
-import NotFound from './components/UI/NotFound/NotFound';
-import Header from './components/UI/Header/Header';
-import Detail from './components/Detail/Detail';
-import Footer from './components/UI/Footer/Footer';
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import TableWrapper from "./components/General/TableWrapper";
+import "./App.css";
+import NotFound from "./components/UI/NotFound/NotFound";
+import Header from "./components/UI/Header/Header";
+import Detail from "./components/Detail/Detail";
+import Footer from "./components/UI/Footer/Footer";
 
 const App = () => {
   return (
