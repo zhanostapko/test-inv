@@ -12,6 +12,7 @@ const App = () => {
     <div className="App">
       <Header />
       <Routes>
+        <p>Hello</p>
         <Route path="/" element={<TableWrapper />} />
         <Route path="/:invoiceId" element={<Detail />} />
         <Route path="*" element={<NotFound />} />
